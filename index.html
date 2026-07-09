@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monitoring Motor Induksi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <img src="logo-unnes.png" class="logo">
+
+        <h1>Prototype Sistem Detektor Kerusakan Dini Motor Induksi</h1>
+
+        <p>Teknik Elektro Universitas Negeri Semarang</p>
+
+    </header>
+
+
+    <section class="status">
+
+        <h2>Status Motor</h2>
+
+        <div id="statusMotor" class="normal">
+
+            🟢 NORMAL
+
+        </div>
+
+    </section>
+
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h3>🌡 Suhu</h3>
+
+            <h1 id="suhu">0 °C</h1>
+
+            <p id="statusSuhu">Normal</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>⚙ Getaran</h3>
+
+            <h1 id="getaran">0 mm/s</h1>
+
+            <p id="statusGetaran">Normal</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🔊 Suara</h3>
+
+            <h1 id="suara">0 dB</h1>
+
+            <p id="statusSuara">Normal</p>
+
+        </div>
+
+    </section>
+
+
+    <section class="chartBox">
+
+        <h2>Grafik Suhu</h2>
+
+        <canvas id="chartSuhu"></canvas>
+
+    </section>
+
+    <section class="chartBox">
+
+        <h2>Grafik Getaran</h2>
+
+        <canvas id="chartGetaran"></canvas>
+
+    </section>
+
+    <section class="chartBox">
+
+        <h2>Grafik Suara</h2>
+
+        <canvas id="chartSuara"></canvas>
+
+    </section>
+
+
+    <footer>
+
+        <h3>Last Update</h3>
+
+        <p id="waktu">-</p>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
