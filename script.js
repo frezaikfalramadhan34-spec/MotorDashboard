@@ -70,7 +70,7 @@ async function ambilData(){
         data.waktu;
 
         // ===== STATUS SUHU =====
-if (data.suhu > 30) {
+if (data.suhu > 35) {
     document.getElementById("statusSuhu").innerHTML = "🔴 Tinggi";
 } else {
     document.getElementById("statusSuhu").innerHTML = "🟢 Normal";
@@ -97,17 +97,17 @@ if (data.suara > 80) {
 
         if(
             data.suhu>30 ||
-            data.getaran>2.80 ||
-            data.suara>20
+            data.getaran>2.40 ||
+            data.suara>70
         ){
             status="🟡 WARNING";
             kelas="warning";
         }
 
         if(
-            data.suhu>30 &&
+            data.suhu>35 &&
             data.getaran>2.80 &&
-            data.suara>20
+            data.suara>80
         ){
             status="🔴 BAHAYA";
             kelas="bahaya";
