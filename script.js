@@ -98,7 +98,7 @@ if (data.suara > 80) {
         if(
             data.suhu>30 ||
             data.getaran>2.40 ||
-            data.suara>70
+            data.suara>80
         ){
             status="🟡 WARNING";
             kelas="warning";
@@ -107,7 +107,7 @@ if (data.suara > 80) {
         if(
             data.suhu>35 &&
             data.getaran>2.80 &&
-            data.suara>80
+            data.suara>90
         ){
             status="🔴 BAHAYA";
             kelas="bahaya";
