@@ -101,7 +101,7 @@ if (data.suara > 80) {
             data.suara>80
         ){
             status="🟡 SIAGA";
-            kelas="warning";
+            kelas="siaga";
         }
 
         if(
@@ -110,7 +110,7 @@ if (data.suara > 80) {
             data.suara>90
         ){
             status="🔴 AWAS";
-            kelas="bahaya";
+            kelas="awas";
         }
 
         const statusMotor=document.getElementById("statusMotor");
