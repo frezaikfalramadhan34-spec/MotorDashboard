@@ -84,7 +84,7 @@ if (data.getaran > 2.80) {
 }
 
 // ===== STATUS SUARA =====
-if (data.suara > 80) {
+if (data.suara > 90) {
     document.getElementById("statusSuara").innerHTML = "🔴 Tinggi";
 } else {
     document.getElementById("statusSuara").innerHTML = "🟢 Normal";
