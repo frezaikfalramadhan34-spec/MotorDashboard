@@ -97,8 +97,8 @@ if (data.suara > 90) {
 
         if(
             data.suhu>30 ||
-            data.getaran>2.40 ||
-            data.suara>80
+            data.getaran>1.80 ||
+            data.suara>90
         ){
             status="🟡 SIAGA";
             kelas="siaga";
@@ -107,7 +107,7 @@ if (data.suara > 90) {
         if(
             data.suhu>35 &&
             data.getaran>2.80 &&
-            data.suara>90
+            data.suara>100
         ){
             status="🔴 AWAS";
             kelas="awas";
