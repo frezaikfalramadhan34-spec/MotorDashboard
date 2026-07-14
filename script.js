@@ -100,7 +100,7 @@ if (data.suara > 80) {
             data.getaran>2.40 ||
             data.suara>80
         ){
-            status="🟡 WARNING";
+            status="🟡 SIAGA";
             kelas="warning";
         }
 
@@ -109,7 +109,7 @@ if (data.suara > 80) {
             data.getaran>2.80 &&
             data.suara>90
         ){
-            status="🔴 BAHAYA";
+            status="🔴 AWAS";
             kelas="bahaya";
         }
 
